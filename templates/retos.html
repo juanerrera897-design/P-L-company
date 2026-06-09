@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retos - P&L company</title>
+  <link rel="icon" href="../imagenes/reciclaje.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+      background: radial-gradient(circle at top left, #6c63ff 0%, transparent 28%),
+                  radial-gradient(circle at bottom right, #2dd4bf 0%, transparent 30%),
+                  linear-gradient(135deg, #07121e 0%, #11203b 45%, #0b1227 100%);
+      color: #edf2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1000px;
+      position: relative;
+      background: rgba(15, 23, 42, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 3rem 2.5rem 2.5rem;
+      box-shadow: 0 35px 90px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+    }
+
+    .top-links {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.75rem;
+    }
+
+    .top-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.08);
+      color: #f8fafc;
+      text-decoration: none;
+      font-size: 0.92rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .top-link:hover {
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .page h1 {
+      margin: 0 0 0.75rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      letter-spacing: 0.16em;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .page p {
+      margin: 1rem 0 1.5rem;
+      line-height: 1.78;
+      color: #d9e2ff;
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+
+    .points-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.9rem 1.3rem;
+      border-radius: 999px;
+      border: 1px solid rgba(125, 211, 252, 0.28);
+      background: rgba(125, 211, 252, 0.12);
+      color: #d9f7ff;
+      font-weight: 700;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .challenges {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .challenge {
+      padding: 1.5rem;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: grid;
+      gap: 1rem;
+    }
+
+    .challenge h2 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: #ffffff;
+    }
+
+    .challenge p {
+      margin: 0;
+      color: #d9e2ff;
+      line-height: 1.6;
+    }
+
+    .challenge .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      color: #7dd3fc;
+      font-weight: 700;
+    }
+
+    .challenge button {
+      width: fit-content;
+      padding: 0.95rem 1.4rem;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #7dd3fc 0%, #8b5cf6 100%);
+      color: #0f172a;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 18px 45px rgba(125, 211, 252, 0.18);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .challenge button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 55px rgba(139, 92, 246, 0.24);
+    }
+
+    .error {
+      padding: 1rem 1.2rem;
+      border-radius: 16px;
+      background: rgba(248, 113, 113, 0.18);
+      border: 1px solid rgba(248, 113, 113, 0.35);
+      color: #fee2e2;
+      margin-top: 1.5rem;
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 2rem;
+      }
+
+      .challenge .info {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top-links">
+      <a class="top-link" href="/">Volver a inicio</a>
+      <a class="top-link" href="/tienda">Tienda de puntos</a>
+    </div>
+    <h1>Retos ecológicos</h1>
+    <p>Completa estos retos para ganar puntos y canjear premios en la tienda.</p>
+    <div class="points-badge">Tus puntos: {{ user.points }}</div>
+
+    {% if msg %}
+      <div class="error">{{ msg }}</div>
+    {% endif %}
+
+    <div class="challenges">
+      {% for challenge in challenges %}
+      <article class="challenge">
+        <div>
+          <h2>{{ challenge.title }}</h2>
+          <p>{{ challenge.description }}</p>
+        </div>
+        <div class="info">
+          <span>Dificultad: {{ challenge.difficulty }}</span>
+          <span>Puntos: {{ challenge.points }}</span>
+        </div>
+        <form method="post">
+          <input type="hidden" name="challenge_id" value="{{ challenge.id }}">
+          <button type="submit">Marcar como completado</button>
+        </form>
+      </article>
+      {% endfor %}
+    </div>
+
+    <p class="footer">Cada reto puede completarse una vez y aporta puntos reales al total de tu cuenta.</p>
+  </main>
+</body>
+</html>

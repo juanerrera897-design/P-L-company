@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro objetivo - P&L company</title>
+  <link rel="icon" href="../imagenes/reciclaje.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+      background: radial-gradient(circle at top left, #6c63ff 0%, transparent 28%),
+                  radial-gradient(circle at bottom right, #2dd4bf 0%, transparent 30%),
+                  linear-gradient(135deg, #07121e 0%, #11203b 45%, #0b1227 100%);
+      color: #edf2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(15, 23, 42, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 2.5rem;
+      box-shadow: 0 35px 90px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+    }
+
+    .page h1 {
+      margin: 0 0 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      letter-spacing: 0.16em;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .page p {
+      margin: 1rem 0;
+      line-height: 1.8;
+      color: #d9e2ff;
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+
+    .page p strong {
+      color: #7dd3fc;
+    }
+
+    .highlight-box {
+      margin: 1.5rem 0;
+      padding: 1.3rem 1.5rem;
+      border-radius: 22px;
+      background: rgba(125, 211, 252, 0.08);
+      border: 1px solid rgba(125, 211, 252, 0.15);
+      color: #e0f2fe;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .list {
+      display: grid;
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+
+    .list span {
+      display: inline-flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      color: #d9e2ff;
+    }
+
+    .list span::before {
+      content: '🔥';
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .big-cta {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      margin: 2rem 0 0;
+      padding: 1.4rem 1.5rem;
+      border-radius: 24px;
+      text-align: center;
+      font-weight: 700;
+      color: #0b132a;
+      background: linear-gradient(135deg, #7dd3fc 0%, #8b5cf6 100%);
+      box-shadow: 0 22px 50px rgba(125, 211, 252, 0.25);
+      text-decoration: none;
+    }
+
+    .postscript {
+      margin-top: 1.25rem;
+      padding: 0.9rem 1.1rem;
+      border-radius: 12px;
+      background: rgba(125, 211, 252, 0.06);
+      border: 1px solid rgba(125, 211, 252, 0.10);
+      color: #e0f2fe;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 2rem;
+      }
+
+      .list span {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>Nuestro objetivo</h1>
+    <p>En P&L queremos que el mundo sea más amable, más sostenible y más feliz 🌍✨. Nuestra misión es sencilla: que cada persona haga pequeñas acciones buenas por la naturaleza y, al mismo tiempo, gane recompensas que puedan usar para vivir experiencias geniales.</p>
+    <div class="highlight-box">
+      <p>Reciclar, recoger basura, cuidar el agua y proteger el ambiente no es solo algo correcto: es una forma de ganar puntos. Y con esos puntos puedes comprar experiencias y objetos dentro de la comunidad. Así, todos ganamos.</p>
+    </div>
+    <div class="list">
+      <span><strong>♻️</strong> Haz que el reciclaje sea tu hábito diario.</span>
+      <span><strong>🧹</strong> Recoge basura del parque, la playa o tu barrio.</span>
+      <span><strong>🌱</strong> Planta un árbol, cuida una planta o ayuda a un huerto.</span>
+      <span><strong>💧</strong> Usa menos agua y cuida cada gota.</span>
+    </div>
+    <p>Cada acto amable con el planeta se convierte en puntos que suman. Y esos puntos no son solo números: son oportunidades para conseguir cosas reales, como experiencias únicas o artículos especiales. Por eso queremos que ser ecológico sea divertido, claro y con premio.</p>
+    <p>En P&L creemos que cuando todos ayudamos un poco, el planeta mejora mucho. Si más personas reciclan, recogen basura y piensan en el medio ambiente, el mundo será un lugar más limpio y más respetuoso. ¡Es una victoria para ti, para los demás y para la naturaleza! 🌿</p>
+    <a class="big-cta" href="/login">Haz algo bueno hoy y gana puntos para disfrutar después ✨</a>
+    <p class="postscript">P.D.: A la hora de recibir tu premio, deberás mostrarle al repartidor las pruebas de cumplimiento de los retos.</p>
+  </main>
+</body>
+</html>
